@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<bean id="bus" class="jbr.springcontext.events.context.Bus">
+		<property name="state" value="Bus Running ~ ~ ~ ~ ~" />
+	</bean>
+
+	<bean id="busListener" class="jbr.springcontext.events.context.BusAppContextListener" />
+	<bean id="busStart" class="jbr.springcontext.events.context.BusStartListener" />
+	<bean id="busStop" class="jbr.springcontext.events.context.BusStopListener" />
+	<bean id="busRefresh" class="jbr.springcontext.events.context.BusRefreshListener" />
+	<bean id="busClose" class="jbr.springcontext.events.context.BusCloseListener" />
+
+</beans>
