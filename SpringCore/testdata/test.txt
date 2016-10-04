@@ -1,0 +1,4 @@
+this is test file
+contains some data
+to read by java
+program

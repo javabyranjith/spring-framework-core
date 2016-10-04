@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Way 1 Starts -->
+	<bean id="dataReader" class="jbr.spring.ioc.FileDataReader">
+		<constructor-arg value="testdata/test.txt" />
+	</bean>
+	<!-- <bean id="dataReader" class="jbr.spring.ioc.DbDataReader" /> -->
+
+
+	<!-- Way 2 Starts -->
+	<bean id="fileDataReader" class="jbr.spring.ioc.FileDataReader">
+		<constructor-arg value="testdata/test.txt" />
+	</bean>
+	<bean id="dbDataReader" class="jbr.spring.ioc.DbDataReader" />
+
+	<bean id="dataReaderService" class="jbr.spring.ioc.DataReaderService">
+		<constructor-arg ref="dbDataReader"></constructor-arg>
+	</bean>
+</beans>
