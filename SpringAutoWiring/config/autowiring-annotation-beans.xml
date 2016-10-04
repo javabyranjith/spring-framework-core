@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<context:annotation-config />
+	<!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" 
+		/> -->
+	<bean id="field" class="jbr.autowiring.annotation.Field">
+		<property name="education" ref="education" />
+	</bean>
+
+	<bean id="address" class="jbr.autowiring.Address">
+		<property name="streeName" value="Gandhi Street"></property>
+		<property name="doorNo" value="15"></property>
+	</bean>
+
+	<bean id="education" class="jbr.autowiring.Education">
+		<property name="qualification" value="M.Tech"></property>
+		<property name="institute" value="SRM University"></property>
+	</bean>
+</beans>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="personByName" class="jbr.autowiring.Person" autowire="byName" />
+	<bean id="personByType" class="jbr.autowiring.Person" autowire="byType" />
+
+	<bean id="personByConstructorWithoutAutowiring" class="jbr.autowiring.constructor.Person">
+		<constructor-arg>
+			<ref bean="address" />
+		</constructor-arg>
+	</bean>
+	<bean id="personByConstructor" class="jbr.autowiring.constructor.Person"
+		autowire="constructor" />
+
+	<bean id="personAutodetectConstructor" class="jbr.autowiring.autodetect.Ranjith"
+		autowire="autodetect" dependency-check="objects" />
+	<bean id="personAutodetectByType" class="jbr.autowiring.autodetect.Sekar"
+		autowire="autodetect" dependency-check="objects" />
+
+	<bean id="personWithoutAutowiring" class="jbr.autowiring.Person"
+		autowire="no">
+		<property name="address" ref="address"></property>
+		<property name="education" ref="education"></property>
+	</bean>
+
+	<bean id="address" class="jbr.autowiring.Address">
+		<property name="streeName" value="Gandhi Street"></property>
+		<property name="doorNo" value="15"></property>
+	</bean>
+
+	<bean id="education" class="jbr.autowiring.Education">
+		<property name="qualification" value="M.Tech"></property>
+		<property name="institute" value="SRM University"></property>
+	</bean>
+</beans>
