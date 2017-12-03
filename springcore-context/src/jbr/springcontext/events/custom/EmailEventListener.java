@@ -1,0 +1,13 @@
+package jbr.springcontext.events.custom;
+
+import org.springframework.context.ApplicationListener;
+
+public class EmailEventListener implements ApplicationListener<EmailEvent> {
+
+  @Override
+  public void onApplicationEvent(EmailEvent emailEvent) {
+    System.out.println("Inside EmailEventListener \n");
+    System.out.println(emailEvent.toString());
+  }
+
+}
