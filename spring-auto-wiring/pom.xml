@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jbr.springcore</groupId>
-	<artifactId>SpringAutoWiring</artifactId>
+	<artifactId>spring-auto-wiring</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>SpringAutoWiring</name>
+	<name>spring-auto-wiring</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
