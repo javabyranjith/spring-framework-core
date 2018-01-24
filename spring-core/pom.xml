@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>jbr.springcore</groupId>
-	<artifactId>SpringBeans</artifactId>
+	<groupId>jbr.spring-core</groupId>
+	<artifactId>spring-core</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>SpringBeans</name>
+	<name>spring-core</name>
 	<url>http://maven.apache.org</url>
 
 
@@ -45,10 +45,6 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
 	</dependencies>
+
 </project>

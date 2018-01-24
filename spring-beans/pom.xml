@@ -3,12 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jbr.springcore</groupId>
-	<artifactId>SpringContext</artifactId>
+	<artifactId>spring-beans</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>SpringContext</name>
+	<name>spring-beans</name>
 	<url>http://maven.apache.org</url>
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
