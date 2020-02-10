@@ -4,10 +4,6 @@ plugins {
     id 'eclipse'
 }
 
-task wrapper(type: Wrapper){
-         gradleVersion = '4.8'
-     }
-
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
@@ -23,4 +19,3 @@ dependencies {
 	
     testImplementation 'junit:junit:4.12'
 }
-
