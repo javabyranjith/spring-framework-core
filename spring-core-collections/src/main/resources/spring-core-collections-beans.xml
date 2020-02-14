@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <context:component-scan base-package="springcore.collections" />
+
+  <bean id="mobile" class="jbr.spring.collections.model.Mobile">
+    <property name="mobileList">
+      <util:list>
+        <value>Samsung</value>
+        <value>Noika</value>
+        <value>Xiomi</value>
+      </util:list>
+    </property>
+
+    <property name="priceMap">
+      <util:map>
+        <entry key="Samsung" value="1000" />
+        <entry key="Nokia" value="2000" />
+        <entry key="Xiomi" value="3000" />
+      </util:map>
+    </property>
+
+    <property name="modelSet">
+      <util:set>
+        <value>A1</value>
+        <value>B1</value>
+        <value>C1</value>
+      </util:set>
+    </property>
+  </bean>
+</beans>

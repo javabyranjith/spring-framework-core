@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'maven'
+    id 'eclipse-wtp'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-core:5.2.0.RELEASE'
+    compile 'org.springframework:spring-beans:5.2.0.RELEASE'
+    compile 'org.springframework:spring-context:5.2.0.RELEASE'
+    compile 'org.springframework:spring-test:5.2.0.RELEASE'
+    testImplementation 'junit:junit:4.12'
+}
+
+eclipse {
+  wtp {
+    component {
+      contextPath = 'spring-core-wtp'
+    }
+  }
+}
