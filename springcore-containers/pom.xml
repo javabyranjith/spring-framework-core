@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jbr.spring</groupId>
-	<artifactId>spring-core-beans</artifactId>
+	<artifactId>springcore-containers</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>spring-core-beans</name>
+	<name>springcore-containers</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -22,6 +22,7 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
 		<!-- Spring Framework -->
 		<dependency>
 			<groupId>org.springframework</groupId>

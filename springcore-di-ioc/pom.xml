@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jbr.spring</groupId>
-	<artifactId>spring-core-dependency-injection</artifactId>
+	<artifactId>spring-core-ioc-di</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>spring-core-dependency-injection</name>
+	<name>spring-core-ioc-di</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

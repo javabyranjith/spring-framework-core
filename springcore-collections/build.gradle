@@ -23,7 +23,7 @@ dependencies {
 eclipse {
   wtp {
     component {
-      contextPath = 'spring-core-wtp'
+      contextPath = 'springcore-collections'
     }
   }
 }
