@@ -1,3 +1,0 @@
-Annotations Covered:
-@Profile
-@Service
