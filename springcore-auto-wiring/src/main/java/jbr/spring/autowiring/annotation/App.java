@@ -1,4 +1,4 @@
-package jbr.autowiring.annotation;
+package jbr.spring.autowiring.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

@@ -3,18 +3,20 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>jbr.springcore</groupId>
-	<artifactId>spring-auto-wiring</artifactId>
+	<artifactId>springcore-auto-wiring</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>spring-auto-wiring</name>
+	<name>springcore-auto-wiring</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.2.3.RELEASE</spring.version>
-		<junit.version>4.12</junit.version>
-	</properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <junit.version>4.12</junit.version>
+    <spring.version>5.2.3.RELEASE</spring.version>
+  </properties>
+
 
 	<dependencies>
 		<!-- Junit -->
@@ -50,4 +52,18 @@
 			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
+	
+	<build>
+    <finalName>springcore-auto-wiring</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

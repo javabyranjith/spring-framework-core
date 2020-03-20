@@ -1,14 +1,9 @@
-package jbr.autowiring.autodetect;
+package jbr.spring.autowiring.autodetect;
 
-import jbr.autowiring.Education;
+import jbr.spring.autowiring.Education;
 
-public class Ranjith {
-
+public class Sekar {
   private Education education;
-
-  public Ranjith(Education education) {
-    this.education = education;
-  }
 
   public Education getEducation() {
     return education;
@@ -20,7 +15,6 @@ public class Ranjith {
 
   @Override
   public String toString() {
-    return "by constructor";
+    return "by type";
   }
-
 }

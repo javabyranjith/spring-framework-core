@@ -1,4 +1,4 @@
-package jbr.autowiring;
+package jbr.spring.autowiring;
 
 public class Address {
 

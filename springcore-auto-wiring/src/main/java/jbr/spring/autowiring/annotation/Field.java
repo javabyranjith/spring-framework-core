@@ -1,9 +1,9 @@
-package jbr.autowiring.annotation;
+package jbr.spring.autowiring.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import jbr.autowiring.Address;
-import jbr.autowiring.Education;
+import jbr.spring.autowiring.Address;
+import jbr.spring.autowiring.Education;
 
 public class Field {
 

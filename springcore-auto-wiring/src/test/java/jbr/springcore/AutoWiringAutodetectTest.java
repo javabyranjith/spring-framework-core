@@ -6,8 +6,8 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import jbr.autowiring.autodetect.Ranjith;
-import jbr.autowiring.autodetect.Sekar;
+import jbr.spring.autowiring.autodetect.Ranjith;
+import jbr.spring.autowiring.autodetect.Sekar;
 
 public class AutoWiringAutodetectTest {
 

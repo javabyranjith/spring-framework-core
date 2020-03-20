@@ -1,6 +1,6 @@
-package jbr.autowiring.constructor;
+package jbr.spring.autowiring.constructor;
 
-import jbr.autowiring.Address;
+import jbr.spring.autowiring.Address;
 
 public class Person {
 
