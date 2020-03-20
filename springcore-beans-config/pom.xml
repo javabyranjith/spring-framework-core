@@ -2,26 +2,29 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>jbr.springcore</groupId>
-	<artifactId>spring-beans-configuration</artifactId>
+	<groupId>jbr.spring</groupId>
+	<artifactId>springcore-beans-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-beans-configuration</name>
+	<name>springcore-beans-config</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.2.3.RELEASE</spring.version>
-		<junit.version>4.12</junit.version>
-	</properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <junit.version>4.12</junit.version>
+    <spring.version>5.2.3.RELEASE</spring.version>
+  </properties>
 
-	<dependencies><!-- Junit -->
+	<dependencies>
+		<!-- Junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
 		</dependency>
 		<!-- Spring Framework -->
 		<dependency>
@@ -49,4 +52,18 @@
 		</dependency>
 
 	</dependencies>
+	
+	<build>
+    <finalName>springcore-beans-config</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
