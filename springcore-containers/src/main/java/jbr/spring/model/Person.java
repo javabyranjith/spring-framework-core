@@ -1,4 +1,4 @@
-package jbr.springcontainers.model;
+package jbr.spring.model;
 
 /**
  * Person Model Object.

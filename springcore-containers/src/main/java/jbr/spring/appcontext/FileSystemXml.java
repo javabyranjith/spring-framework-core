@@ -1,9 +1,9 @@
-package jbr.springcontainers.appcontext;
+package jbr.spring.appcontext;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import jbr.springcontainers.model.Person;
+import jbr.spring.model.Person;
 
 /**
  * An example program for loading beans using Spring FileSystemXmlApplicationContext.

@@ -1,10 +1,10 @@
-package jbr.springcontainers.beanfactory;
+package jbr.spring.beanfactory;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 
-import jbr.springcontainers.model.Person;
+import jbr.spring.model.Person;
 
 /**
  * An example program for loading beans using Spring BeanFactory.

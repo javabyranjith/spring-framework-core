@@ -1,10 +1,10 @@
-package jbr.springcontainers.appcontext;
+package jbr.spring.appcontext;
 
   import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import jbr.springcontainers.model.Car;
-import jbr.springcontainers.model.Person;
+import jbr.spring.model.Car;
+import jbr.spring.model.Person;
 
 /**
  * An example program for loading beans using Spring
