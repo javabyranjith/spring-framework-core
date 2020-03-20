@@ -1,4 +1,4 @@
-package jbr.springcontext.events.context;
+package jbr.spring.events.context;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;

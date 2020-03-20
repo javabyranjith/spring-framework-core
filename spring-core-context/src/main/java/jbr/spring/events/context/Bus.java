@@ -1,4 +1,4 @@
-package jbr.springcontext.events.context;
+package jbr.spring.events.context;
 
 public class Bus {
 

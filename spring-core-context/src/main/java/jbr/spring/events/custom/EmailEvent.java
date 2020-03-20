@@ -1,4 +1,4 @@
-package jbr.springcontext.events.custom;
+package jbr.spring.events.custom;
 
 import org.springframework.context.ApplicationEvent;
 
