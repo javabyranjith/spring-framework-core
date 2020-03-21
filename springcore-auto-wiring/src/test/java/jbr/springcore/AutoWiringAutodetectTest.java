@@ -17,7 +17,7 @@ public class AutoWiringAutodetectTest {
 
   @Before
   public void init() throws Exception {
-    applicationContext = new FileSystemXmlApplicationContext("config/autowiring-beans.xml");
+    applicationContext = new FileSystemXmlApplicationContext("src/main/resources/beans-autowiring.xml");
     personAutodetectConstructor = (Ranjith) applicationContext.getBean("personAutodetectConstructor");
     personAutodetectByType = (Sekar) applicationContext.getBean("personAutodetectByType");
   }

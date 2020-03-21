@@ -17,7 +17,7 @@ public class AutoWiringTest {
 
   @Before
   public void init() throws Exception {
-    applicationContext = new FileSystemXmlApplicationContext("config/autowiring-beans.xml");
+    applicationContext = new FileSystemXmlApplicationContext("src/main/resources/beans-autowiring.xml");
     personWithoutAutowiring = (Person) applicationContext.getBean("personWithoutAutowiring");
     personByName = (Person) applicationContext.getBean("personByName");
     personByType = (Person) applicationContext.getBean("personByType");

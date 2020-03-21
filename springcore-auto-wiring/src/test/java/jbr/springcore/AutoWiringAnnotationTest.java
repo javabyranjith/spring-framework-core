@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import jbr.spring.autowiring.annotation.Field;
 
-@ContextConfiguration(locations = { "classpath:*/autowiring-annotation-beans.xml" })
+@ContextConfiguration(locations = { "classpath:*/beans-autowiring-annotation.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class AutoWiringAnnotationTest {
 
