@@ -4,19 +4,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- Way 1 Starts -->
-	<bean id="dataReader" class="jbr.spring.dependency.injection.FileDataReader">
+	<bean id="dataReader" class="jbr.springcore.di.FileDataReader">
 		<constructor-arg value="testdata/depdendency-injection.txt" />
 	</bean>
 	<!-- <bean id="dataReader" class="dependency.injection.DbDataReader" /> -->
 
 
 	<!-- Way 2 Starts -->
-	<bean id="fileDataReader" class="jbr.spring.dependency.injection.FileDataReader">
+	<bean id="fileDataReader" class="jbr.springcore.di.FileDataReader">
 		<constructor-arg value="testdata/depdendency-injection.txt" />
 	</bean>
-	<bean id="dbDataReader" class="jbr.spring.dependency.injection.DbDataReader" />
+	<bean id="dbDataReader" class="jbr.springcore.di.DbDataReader" />
 
-	<bean id="dataReaderService" class="jbr.spring.dependency.injection.DataReaderService">
+	<bean id="dataReaderService" class="jbr.springcore.di.DataReaderService">
 		<constructor-arg ref="dbDataReader"></constructor-arg>
 	</bean>
 </beans>

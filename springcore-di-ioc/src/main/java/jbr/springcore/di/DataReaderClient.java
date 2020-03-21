@@ -1,4 +1,4 @@
-package jbr.spring.dependency.injection;
+package jbr.springcore.di;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -14,7 +14,7 @@ public class DataReaderClient {
   private DataReader dataReader;
 
   public DataReaderClient() {
-    applicationContext = new ClassPathXmlApplicationContext("dependency-injection-beans.xml");
+    applicationContext = new ClassPathXmlApplicationContext("beans-springcore-di.xml");
   }
 
   public String readData() {

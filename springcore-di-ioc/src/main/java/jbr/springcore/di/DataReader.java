@@ -1,4 +1,4 @@
-package jbr.spring.dependency.injection;
+package jbr.springcore.di;
 
 public interface DataReader {
   String readData();

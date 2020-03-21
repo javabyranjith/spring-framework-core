@@ -1,4 +1,4 @@
-package jbr.spring.dependency.injection;
+package jbr.springcore.di;
 
 public class DataReaderService {
   private DataReader dataReader;

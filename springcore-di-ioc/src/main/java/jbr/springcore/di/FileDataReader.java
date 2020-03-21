@@ -1,4 +1,4 @@
-package jbr.spring.dependency.injection;
+package jbr.springcore.di;
 
 import java.io.BufferedReader;
 import java.io.File;
